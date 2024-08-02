@@ -1,3 +1,5 @@
+# This runs on the Metro M0 Express
+
 import time
 import board
 import digitalio
@@ -44,7 +46,7 @@ while True:
     timestamp = time.time()
 
     # Print sensor data to serial monitor
-    print(f"{timestamp},{distance},{infrared_value}")
+    print(f"{timestamp},{distance}")
 
      # Control servo motor based on infrared sensor value
     if infrared_value:
